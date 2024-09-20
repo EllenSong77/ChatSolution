@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #1a1a1a;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #333;
+}
+
+#personal-info p {
+    margin: 10px 0;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-item {
+    flex: 1 1 calc(33.333% - 10px);
+    background-color: #1a1a1a;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.photo-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+.more-photos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #0ff;
+    text-decoration: none;
+    border: 1px solid #0ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more-photos:hover {
+    background-color: #0ff;
+    color: #121212;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 0;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+footer nav a {
+    color: #0ff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer nav a img {
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+footer nav a:hover img {
+    transform: scale(1.1);
+}
+
+.text-neon {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+.border-neon {
+    border-color: #0ff !important;
+}
+
+.btn-outline-neon {
+    color: #0ff;
+    border-color: #0ff;
+}
+
+.btn-outline-neon:hover {
+    background-color: #0ff;
+    color: #121212;
+}
+
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 20px;
+    }
+}
